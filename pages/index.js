@@ -15,6 +15,7 @@ export default function Home({ invoicesList, invoicesPaidList, invoicesNotPaidLi
   useEffect(() => {
     setDataDisplayed(invoicesList);
     setIsLoading(false);
+    console.log(invoicesList);
 
     // Make the main tab styled as default choosen, and remove it when click on other tabs
     const invoicesNavLinks = document.querySelectorAll('.invoices-dashboard-container label');
