@@ -91,31 +91,31 @@ const Invoice = ({ invoice }) => {
 export default Invoice
 
 
-export async function getStaticPaths() {
+// export async function getStaticPaths() {
 
-    // Get all invoices numbers to build paths of all invoices pages
-    let invoicesList = [];
-    const res = await fetch("https://vbpl7ijjwrpd7p34teap2looie0ngbyj.lambda-url.us-east-1.on.aws/");
-    const data = await res.json();
-    invoicesList = data.data;
+//     // Get all invoices numbers to build paths of all invoices pages
+//     let invoicesList = [];
+//     const res = await fetch("https://vbpl7ijjwrpd7p34teap2looie0ngbyj.lambda-url.us-east-1.on.aws/");
+//     const data = await res.json();
+//     invoicesList = data.data;
 
-    // Build invoices paths array
-    let pathsArray = invoicesList.map((inv) => {
-        return {
-            params: {
-                id: `${inv.invoice_number}`
-            }
-        }
-    });
+//     // Build invoices paths array
+//     let pathsArray = invoicesList.map((inv) => {
+//         return {
+//             params: {
+//                 id: `${inv.invoice_number}`
+//             }
+//         }
+//     });
 
-    return {
-        paths: pathsArray,
-        fallback: false,
-    }
-}
+//     return {
+//         paths: pathsArray,
+//         fallback: false,
+//     }
+// }
 
 
-export async function getStaticProps(context) {
+export async function getServerSideProps(context) {
     const { params } = context;
     const invoiceNumber = params.id;
 
