@@ -19,7 +19,7 @@ function Form() {
 
 
         // Basic Validation 
-        if (inv_num && ammount_to_pay && customer_name && date && payment_status != null) {
+        if (inv_num && ammount_to_pay && customer_name && date != "" && payment_status != null) {
             setIsLoading(true);
             let file = fileName != "" ? fileName.split('fakepath\\')[1] : "";
             let customer_logo = c_logo != "" ? c_logo.split('fakepath\\')[1] : "";
