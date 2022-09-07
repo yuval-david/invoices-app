@@ -40,7 +40,7 @@ export default function dataAnalysis({ invoicesList, invoicesPaidList, invoicesN
 }
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
     // Initialization invoices arrays
     let invoicesList = [];

@@ -98,7 +98,7 @@ export default function Home({ invoicesList, invoicesPaidList, invoicesNotPaidLi
 
 
 // GET THE DATA (invoices) that required to render the page
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
   // Initialization the arrays
   let invoicesList = [];
