@@ -1,0 +1,20 @@
+.chart_title {
+    background: linear-gradient(0deg, #c9c6cd, transparent);
+    padding: 1vw;
+    border-radius: 5px;
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 4vw;
+}
+
+.cake_diagram {
+    width: 30%;
+    margin: auto;
+}
+.labels {
+    display: flex;
+    justify-content: space-between;
+    font-size: 120%;
+    font-weight: bold;
+}
+

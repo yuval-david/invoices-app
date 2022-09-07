@@ -1,0 +1,14 @@
+.invoices_list_component {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 4vw;
+    row-gap: 3vw;
+}
+
+
+/** MOBILE CSS **/
+@media screen and (max-width: 1024px) {
+    .invoices_list_component {
+        row-gap: 5vw;
+    }
+}

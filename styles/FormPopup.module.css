@@ -1,0 +1,9 @@
+.popup_container {
+    width: 30vw;
+    margin: auto;
+    position: absolute;
+    z-index: 999;
+    background-color: #6138fe;
+    color: #fff;
+}
+

@@ -1,3 +1,7 @@
+/**********  GENERAL  **********/
+html {
+  font-size: 1vw;
+}
 html,
 body {
   padding: 0;
@@ -22,5 +26,172 @@ a {
   body {
     color: white;
     background: black;
+  }
+}
+
+.container {
+  padding: 0 3rem;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 2vw 0;
+}
+
+
+/**********  FOOTER  **********/
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2vw 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+
+@media (prefers-color-scheme: dark) {
+  .card,
+  .footer {
+    border-color: #222;
+  }
+  .code {
+    background: #111;
+  }
+  .logo img {
+    filter: invert(1);
+  }
+}
+
+
+/**********  NAVBAR  **********/
+.navbar-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 4vw;
+  background: #eceaef;
+  padding: 1vw 2vw;
+  border-radius: 5px;
+}
+
+.navbar-container nav {
+  display: inline-block;
+}
+
+.navbar-container nav a {
+  margin-left: 4vw;
+  font-weight: bold;
+  font-size: 140%;
+}
+
+.navbar-container nav a:first-child {
+  margin-left: 0vw;
+}
+
+.navbar-container nav a:hover {
+  text-decoration: underline;
+}
+
+.logo-nav {
+  width: 5vw;
+  display: inline-block;
+}
+
+.logo-nav img {
+  border-radius: 5px;
+}
+
+
+/**********  PAGE CONTENT  **********/
+.page-title {
+  margin-bottom: 4vw;
+}
+
+
+/********** INVOICE PAGE  **********/
+.btn-back {
+  background-color: #6138fe;
+  color: #fff;
+  font-weight: 500;
+  padding: 0.4vw 0.6vw 0.5vw 0.6vw;
+  border-radius: 1vw;
+  transition: 0.3s ease;
+  display: inline-block;
+  margin-top: 3vw;
+}
+
+.btn-back:hover {
+  background-color: #260e86;
+  transition: 0.3s ease;
+}
+
+.invoice-main-container {
+  display: flex;
+}
+
+.invoic-data-container {
+  padding: 1vw;
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.customer-data-container {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.data-block {
+  margin-bottom: 1vw;
+  font-size: 130%;
+}
+
+.data-block label {
+  font-weight: 700;
+}
+
+.red {
+  color: #ba3838;
+}
+
+.green {
+  color: #57bc43;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.customer-img {
+  width: 17vw;
+}
+
+.customer-title {
+  font-weight: bold;
+  font-size: 130%;
+}
+
+
+
+/********  MOBILE CSS  ********/
+@media screen and (max-width: 1024px) {
+  html {
+      font-size: 2vw;
   }
 }

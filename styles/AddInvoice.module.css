@@ -1,0 +1,107 @@
+.form {
+    width: 70%;
+    margin: auto;
+    margin-top: 3vw;
+    background: #eceaef;
+    padding: 2vw;
+    border-radius: 5px;
+    font-size: 125%;
+}
+
+.flex_container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.inp_div > label {
+    margin-right: 0.5vw;
+    font-weight: 500;
+}
+
+.inp_div {
+    line-height: 3;
+}
+
+.inp_div > div {
+    line-height: 1.8;
+}
+
+
+
+.inp_div input {
+    background: transparent;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+}
+
+
+.inp_div .radio-div label {
+    margin-left: 0.9vw;
+}
+
+.btn_submit {
+    width: 8vw;
+    padding: 0.5vw;
+    font-size: 110%;
+    font-weight: bold;
+    background-color: #6138fe;
+    color:#fff;
+    border-color: #6138fe;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 1vw;
+    transition-duration: 0.4s;
+    display: inherit;
+    margin: auto;
+    margin-top: 3vw;
+}
+
+.btn_submit:hover {
+    color: #6138fe;
+    background-color:rgba(255, 255, 255, 0.863);
+    transition-duration: 0.4s;
+}
+
+.loader {
+    border: 14px solid #eceaef;
+    border-top: 14px solid #6138fe;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 2s linear infinite;
+    margin: auto;
+    margin-top: 3vw;
+    position: absolute;
+    top: 20vw;
+    right: 48vw;
+    z-index: 999;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+
+
+  /** MOBILE CSS **/
+@media screen and (max-width: 1024px) {
+  .loader {
+    margin-top: 20vw;
+  }
+}
+
+
+.loading_screen::after {
+    content: "";
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 99;
+    background: #785ce697;
+    width: 100%;
+    height: 100%;
+}
