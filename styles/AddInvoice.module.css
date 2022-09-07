@@ -91,6 +91,16 @@
   .loader {
     margin-top: 20vw;
   }
+  
+  .form {
+    width: 90%;
+    margin: 5vw auto auto;
+  }
+
+  .flex_container {
+    flex-direction: column;
+    width: 90%;
+ }
 }
 
 
